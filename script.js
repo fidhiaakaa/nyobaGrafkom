@@ -39,7 +39,7 @@ function init() {
 
   //object gltf
   const loaderModel = new GLTFLoader();
-  loaderModel.load('./assets/scene.gltf', (gltf) => {
+  loaderModel.load('./textures/scene.gltf', (gltf) => {
     gltf.scene.traverse(c => {
       c.castShadow = true;
     });
@@ -58,18 +58,6 @@ function init() {
   scene.add(cube);
 
   //light
-  /*
-  let light = new THREE.DirectionalLight(0xffffff, 1.0);
-  light.position.set(-90, 70, 100);
-  light.castShadow = true;
-  //light.shadow.camera.near = 0.1;
-  //light.shadow.camera.far = 25;
-  scene.add(light);
-
-  let alight = new THREE.AmbientLight(0xffffff, 0.3);
-  alight.castShadow = true;
-  scene.add(alight);
-  */
   const pointLight = new THREE.PointLight(0xffffff);
   pointLight.position.set(-100, 200, 100);
   scene.add(pointLight);
