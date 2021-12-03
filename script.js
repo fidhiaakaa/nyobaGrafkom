@@ -36,7 +36,7 @@ let scene, camera, renderer, sphereCamera;
 
         //object gltf
         let loader3 = new THREE.GLTFLoader();
-        loader3.load('scene.gltf', function(gltf) {
+        loader3.load('./pohon/scene.gltf', function(gltf) {
           gltf.scene.traverse(c => {
             c.castShadow = true;
             c.receiveShadow = true;
