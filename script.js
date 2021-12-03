@@ -39,7 +39,7 @@ function init() {
 
   //object gltf
   const loaderModel = new GLTFLoader();
-  loaderModel.load('./textures/scene.gltf', (gltf) => {
+  loaderModel.load('./assets/scene.gltf', (gltf) => {
     gltf.scene.traverse(c => {
       c.castShadow = true;
     });
