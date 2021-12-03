@@ -40,8 +40,8 @@ let scene, camera, renderer, sphereCamera;
           gltf.scene.traverse(c => {
             c.castShadow = true;
             c.receiveShadow = true;
-            c.position.set(30,20,0);
-            c.scale.set(10,10,10);
+            c.position.set(0,20,0);
+            c.scale.set(30,10,10);
           });
           scene.add(gltf.scene);
         });
@@ -53,7 +53,7 @@ let scene, camera, renderer, sphereCamera;
             color: 0x000000
           })
         );
-        cube.position.set(0,5,0);
+        cube.position.set(10,5,0);
         cube.castShadow = true;
         scene.add(cube);
 
