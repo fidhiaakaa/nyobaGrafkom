@@ -41,7 +41,7 @@ let scene, camera, renderer, sphereCamera;
             c.castShadow = true;
             c.receiveShadow = true;
             c.position.set(30,20,0);
-            c.scale.set(0.5,0.5,0.5);
+            c.scale.set(10,10,10);
           });
           scene.add(gltf.scene);
         });
