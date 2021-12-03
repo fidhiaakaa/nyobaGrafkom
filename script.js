@@ -53,7 +53,7 @@ let scene, camera, renderer, sphereCamera;
             color: 0x000000
           })
         );
-        cube.position.set(90,5,0);
+        cube.position.set(30,5,0);
         cube.castShadow = true;
         scene.add(cube);
 
